@@ -1,3 +1,8 @@
+:root {
+    --blue: #1d40b6;
+    --white: #fafafa;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +13,23 @@ ul {
     list-style-type: none;
 }
 
+body {
+    background-color: var(--white);
+}
+
 /* Cabeçalho principal */
 
 .cabecalho-principal {
     height: 80px;
     width: 100%;
-    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--blue);
+}
+
+.cabecalho-principal a {
+    color: var(--white);
 }
 
 /* Menu de navegação */
@@ -35,4 +48,8 @@ nav.menu > ul > li > a {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+}
+
+main {
+    margin: 0 8%;
 }
