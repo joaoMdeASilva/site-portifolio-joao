@@ -17,13 +17,13 @@ body {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    min-width: 100vw;
+    height: 100vh;
+    border:1px solid;
 }
 
 /* Cabeçalho principal */
 
 .cabecalho-principal {
-    height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -33,27 +33,23 @@ body {
 
 .cabecalho-principal a {
     color: var(--white);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-/* Menu de navegação */
-
 nav.menu {
-    width: fit-content;
-    height: fit-content;
+    padding: 1.5%;
 }
 
 nav.menu > ul {
     display: flex;
     gap: 100px;
-}
-
-nav.menu > ul > li > a {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+    
 }
 
 main {
+    flex-grow: 1;
     margin: 5% 10%;
 }
 
@@ -63,6 +59,7 @@ section.sobre {
     flex-direction: row;
     justify-content: space-between;
 }
+
 section.sobre h2 {
     color: var(--blue);
 }
